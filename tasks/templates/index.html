@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <title> All tasks </title>
+    </head>
+    <body>
+        <h1> Tasks </h1>
+        {% for task in tasks %}
+            <a href="/tasks/{{task.id}}">
+                <h2><small>{{ task.id }}</small> {{ task.title }}</h2>
+            </a>
+            <p>{{ task.body }}</p>
+            <span>{{ task.created_at }}</span> ----
+            <span>{{ task.updated_at }}</span> ----
+            <span>{{ task.assigned_to }}</span>
+        {% endfor %}
+    </body>
+</html>
+

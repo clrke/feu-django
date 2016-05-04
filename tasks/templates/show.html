@@ -1,0 +1,17 @@
+<html>
+    <head>
+        <title> Task #{{id}} </title>
+    </head>
+    <body>
+        <h2><small>{{ task.id }}</small> {{ task.title }}</h2>
+        <p>{{ task.body }}</p>
+        <span>{{ task.created_at }}</span> ----
+        <span>{{ task.updated_at }}</span> ----
+        <span>{{ task.assigned_to }}</span>
+        <br/>
+        <br/>
+        <br/>
+        <a href="/tasks">Back</a>
+    </body>
+</html>
+
